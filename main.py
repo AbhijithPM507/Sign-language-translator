@@ -21,7 +21,7 @@ while True:
     if results.multi_hand_landmarks:
         for lmHands in results.multi_hand_landmarks:
             mDraw.draw_landmarks(frame,lmHands,mHands.HAND_CONNECTIONS)
-            
+            #lithin changes
             landmarks=[]
             for lm in lmHands.landmark:
                 landmarks.extend([lm.x,lm.y])
@@ -36,4 +36,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()            
+
         
